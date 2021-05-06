@@ -66,8 +66,6 @@ register your Workflows and Activities on different Workers depending on your se
 If the Worker polls a Task for a Workflow or Activity which was not registered, it will not be able to execute it and fail.
 However, the failure of the Task will not cause the associated Workflow to fail.
 
-:::
-
 When you start a Workflow or when a Workflow needs to invoke an Activity, the Temporal Server adds
 a new task to the Workflows / Activity Task Queue. Any Worker polling that Task Queue and has that Workflow / Activity 
 registered can pick up the new task and execute it.
